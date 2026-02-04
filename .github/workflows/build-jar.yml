@@ -20,9 +20,11 @@ jobs:
           cache: maven
       - name: Build Jar(Skip Tests)
         run: mvn clean package -DskipTests=true -B
+        working-directory: SpringBootCourseTrainer
 
       - name: Upload Jar to Artifact
         uses: actions/upload-artifact@v4
         with:
           name: springboot-app-jar
-          path: target/*.jar
+          #path: target/*.jar
+          path: SpringBootCourseTrainer/target/*.jar
