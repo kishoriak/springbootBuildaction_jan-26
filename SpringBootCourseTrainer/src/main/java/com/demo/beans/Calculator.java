@@ -25,6 +25,11 @@ public class Calculator {
         return 1;
     }
 
+
+    public int test123(){
+        return 1;
+    }
+
     // Checks if a number is even
     public boolean isEven(int a) {
         return a % 2 == 0;
